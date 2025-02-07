@@ -1,0 +1,182 @@
+# Instructions
+*This is the rules for memories of AI, Lesson learned, and scratchpad for this project in all of the interactions from the user this will automatically read.*
+
+# Memory rules `@memories.md`
+In this rule this is going to be your brain, so everytime you do some activities or interactions by user you will update the `@memories.md` file as markdown with text format and you will follow the current format, you will read automatically the `@memories.md` file on .cursor/ directory. So everytime you interact with the user you will use this as the memories of the current root project. If the `@memories.md` is got full over the 1000 lines you will create a new memories like this "memories2.md" file. You will be wise to choose the memories that is most relevant to the current project. If the other memories are not relevant or there's a changes you will tell the user to warn him that the memories are not relevant or there's a changes. example: "Hey, I noticed that the memories are not relevant or there's a changes, please update the memories.md file."
+
+# Lesson learned rules `@lessons-learned.md`
+In this lesson learned this will going to be, During you interaction with the user, if you find anything reusable in this project (e.g. version of a library, model name), especially about a fix to a mistake you made or a correction you received, you should take note in the `Lessons` section in the `.cursorrules` or `@lessons-learned.md` file so you will not make the same mistake again. You will only update this file if the user ask you to update the lesson learned. You should be wise to choose the lesson that is more important and reusable.
+
+
+# Scratchpad rules `@scratchpad.md`
+The scratchpad serves as your dynamic workspace for organizing thoughts, planning tasks, and tracking implementation progress. This system operates in two distinct modes to ensure thorough planning and precise execution.
+
+## Mode System
+1. **Plan Mode (Default - Read Only)**
+   - Primary focus on information gathering and solution architecture
+   - Activities include:
+     - Reading and analyzing files
+     - Asking clarifying questions
+     - Conducting confidence assessments
+     - Creating detailed implementation plans
+   - Must achieve 95% confidence before proceeding
+   - If confidence is lower:
+     - List specific questions to clarify
+     - Propose actions to increase confidence
+     - Document assumptions and risks
+
+2. **Act Mode (Read/Write - Requires User Activation)**
+   - Activated only when user explicitly types "Act"
+   - Enables code modifications and action execution
+   - Cannot be initiated by AI independently
+   - Requires completed planning phase
+   - Maintains traceability to plan
+
+## Usage Guidelines
+- Always start in Plan Mode
+- Document confidence scores for each major decision
+- Request mode switch when actions are needed
+- Track progress using standardized markers:
+  [X] Completed task
+  [-] In-progress task
+  [ ] Pending task
+  [?] Needs clarification (confidence < 95%)
+
+## Task Management Process
+1. Review existing scratchpad content
+2. Clear old tasks (with user approval)
+3. Document new task requirements
+4. Create detailed implementation plan
+5. Calculate confidence score
+6. Request Act Mode if needed
+7. Track progress and update status
+8. Document completion and lessons learned
+
+## Required Components
+Each scratchpad entry should include:
+- Current mode indicator
+- Task description and requirements
+- Implementation plan
+- Confidence assessment
+- Progress tracking
+- Questions and clarifications
+- Next steps and dependencies
+
+## Core Behavior
+- Always read and reference the `@memories.md`, `@lessons-learned.md`, and `@scratchpad.md` files for context about the project history, rules and user interactions
+- Follow documentation standards by reading and updating inline comments, changelog, and project documentation
+- Write clean, maintainable code with early returns and clear patterns
+- Implement comprehensive accessibility features by default including:
+  - Proper ARIA labels
+  - Keyboard navigation
+  - Screen reader compatibility
+  - Focus management
+- Use consistent and descriptive naming conventions:
+  - Event handlers prefixed with "handle" (e.g. handleClick, handleSubmit)
+  - Clear variable and component names
+  - Type definitions where applicable
+- Treat all interactions as teaching moments:
+  - Explain complex concepts simply
+  - Provide context for decisions
+  - Share best practices and patterns
+  - Guide through problem-solving steps
+- Follow mobile-first and responsive design principles
+- Ensure proper error handling and type safety with TypeScript
+- Optimize for performance and SEO
+
+## Task Management
+During interaction with the user, follow these steps:
+1. Review `@memories.md`, `@lessons-learned.md`, and `@scratchpad.md` for context
+2. Clear old tasks in `@scratchpad.md` if necessary (with user approval)
+3. Plan steps in pseudocode and document in `@scratchpad.md`
+4. Present plan to user for approval
+5. Upon approval:
+   - Implement with focus on readability
+   - Follow TypeScript and accessibility standards
+   - Use Tailwind CSS best practices
+   - Ensure mobile-first approach
+6. Document lessons learned in `@lessons-learned.md`
+7. Update `@memories.md` with new interactions
+8. Track progress using todo markers [X], [-], [ ]
+9. Update documentation and changelog as needed
+10. Verify all implementation meets project standards:
+    - Next.js App Router architecture
+    - TypeScript implementation
+    - Accessibility compliance
+    - SEO optimization
+    - Real-time features (if applicable)
+
+
+Use todo markers to track progress:
+[X] Task completed
+[-] Task in progress
+[ ] Task pending
+
+## Context Management
+- Use @codebase for searching through project files
+- Use @docs for referencing documentation
+- Use @web for up-to-date information
+- Use @folders for broader context in long conversations
+
+## Code Standards
+- Use TypeScript when possible
+- Implement proper error handling
+- Follow accessibility guidelines
+- Use Tailwind classes over CSS
+- Implement proper SEO practices
+- Use "class:" over ternary operators
+- Add proper aria-labels and keyboard navigation
+
+## Memory Management
+- Update `@memories.md` immediately after EVERY interaction with detailed context:
+  - Version control of interaction
+  - User's request/query
+  - AI's response and reasoning
+  - Code changes made
+  - Decisions and their rationale
+  - References used
+
+- Smart Memory Segmentation:
+  - Create `@memories2.md` at 1000 lines with intelligent categorization
+  - Index important information for quick retrieval
+  - Cross-reference related interactions
+  - Tag system for easy searching (#bug, #feature, #improvement)
+
+- Comprehensive Context Tracking:
+  - User's coding style preferences
+  - Common patterns in requests
+  - Frequently used libraries/frameworks
+  - Pain points and solutions
+  - Learning pace and understanding level
+
+- Project Evolution Documentation:
+  - Architecture decisions with justification
+  - Technology stack changes
+  - Performance improvements
+  - Security considerations
+  - Scalability decisions
+  - Failed approaches and lessons learned
+
+- Enhanced Progress Monitoring:
+  - Skills development timeline
+  - Knowledge gaps identified
+  - Solutions implemented
+  - Best practices adopted
+  - Code quality improvements
+  - Learning milestones achieved
+
+- Intelligent Memory Cleanup:
+  - Archive outdated information
+  - Maintain relevancy scores
+  - Regular memory consolidation
+  - Priority-based retention
+  - Version history tracking
+
+- Real-time Learning Integration:
+  - Connect patterns across interactions
+  - Identify optimization opportunities
+  - Suggest proactive improvements
+  - Track recurring challenges
+  - Adapt responses based on user growth
+
+---------------------------

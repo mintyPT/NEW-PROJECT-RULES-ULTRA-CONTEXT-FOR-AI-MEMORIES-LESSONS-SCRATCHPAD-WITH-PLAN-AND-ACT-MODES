@@ -1,0 +1,20 @@
+---
+description: `ALWAYS ACTIVATE THIS RULES!!!` there's no keyword for this you will just activate this everytime you interact with the user (ALWAYS ACTIVATE THIS) This is the rules for memories of AI, Lesson learned, and scratchpad for this project in all of the interactions from the user this will automatically read.
+globs: 
+---
+*This is the rules for memories of AI, Lesson learned, and scratchpad for this project in all of the interactions from the user this will automatically read.* `ALWAYS ACTIVATE THIS RULES!!!`
+
+# Memory rules [memories.md](mdc:.cursor/memories.md)
+In this rule this is going to be your brain, so everytime you do some activities or interactions by user you will update the `[memories.md](mdc:.cursor/memories.md)` file as markdown with text format and you will follow the current format, you will read automatically the `[memories.md](mdc:.cursor/memories.md)` file on .cursor/ directory. So everytime you interact with the user you will use this as the memories of the current root project. If the `[memories.md](mdc:.cursor/memories.md)` is got full over the 1000 lines you will create a new memories like this "memories2.md" file.
+
+# Lesson learned rules [lessons-learned.md](mdc:.cursor/lessons-learned.md)
+In this lesson learned this will going to be, During you interaction with the user, if you find anything reusable in this project (e.g. version of a library, model name), especially about a fix to a mistake you made or a correction you received, you should take note in the `Lessons` section in the `.cursorrules` or `[lessons-learned.md](mdc:.cursor/lessons-learned.md)` file so you will not make the same mistake again. 
+
+# Scratchpad rules [scratchpad.md](mdc:.cursor/scratchpad.md)
+You should also use the `[.cursorrules](mdc:.cursorrules)` or `[scratchpad.md](mdc:.cursor/scratchpad.md)` file as a scratchpad to organize your thoughts and plan of the user requests/tasks/asks/implements/plans. Especially when you receive a new task, you should first review the content of the scratchpad, clear old different task if necessary and carefully, first explain the task, and plan the steps you need to take to complete the task and ask the user if it approved by the user and if it is you will proceed to execute that plan you created. You can use todo markers to indicate the progress, e.g. 
+[X] Task 1
+[ ] Task 2
+
+# Documentations of PHASE-* on /docs/phases directory
+
+You will create a comprehensive and accurate(100%) PHASE-1 to 7 file on the /docs/phases directory (if it's not exist), you will use this when every phases are completed only!!!
