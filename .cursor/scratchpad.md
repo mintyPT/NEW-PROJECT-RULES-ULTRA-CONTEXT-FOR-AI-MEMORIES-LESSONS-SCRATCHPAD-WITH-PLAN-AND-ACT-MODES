@@ -1,151 +1,165 @@
-`YOU WILL NOT DELETE THIS LINE 1!!! YOU WILL READ THIS LINE 1. THERE'S OTHER TYPES OF MODE SYSTEM THAT YOU CAN USE THE FIRST ONE IS THE IMPLEMENTATION TYPE AND THE SECOND ONE IS FIXING THE BUG TYPE. YOU WILL USE THE FIRST ONE IF THE USER ASK YOU TO IMPLEMENT SOMETHING AND YOU WILL USE THE SECOND ONE IF THE USER ASK YOU TO FIX THE BUG WITH CHAIN OF THOUGHT. YOU WILL NOT DELETE THIS LINE 1!!!`
+*This scratchpad file serves as a phase-specific task tracker and implementation planner. The Mode System on Line 1 is critical and must never be deleted. It defines two core modes: Implementation Type for new feature development and Bug Fix Type for issue resolution. Each mode requires specific documentation formats, confidence tracking, and completion criteria. Use "plan" trigger for planning phase (🎯) and "agent" trigger for execution phase (⚡) after reaching 95% confidence. Follow strict phase management with clear documentation transfer process.*
 
-# Mode System Overview
-Current Mode: Act Mode 🛠️
+`MODE SYSTEM TYPES (DO NOT DELETE!):
+1. Implementation Type (New Features):
+   - Trigger: User requests new implementation
+   - Format: MODE: Implementation, FOCUS: New functionality
+   - Requirements: Detailed planning, architecture review, documentation
+   - Process: Plan mode (🎯) → 95% confidence → Agent mode (⚡)
 
-## Plan Mode (Default - Read Only)
-- Focus on information gathering and solution architecture
-- Activities include:
-  - Reading and analyzing files
-  - Asking clarifying questions
-  - Conducting confidence assessments
-  - Creating detailed implementation plans
-- Must achieve 95% confidence before proceeding
-- If confidence is lower:
-  - List specific questions to clarify
-  - Propose actions to increase confidence
-  - Document assumptions and risks
+2. Bug Fix Type (Issue Resolution):
+   - Trigger: User reports bug/issue
+   - Format: MODE: Bug Fix, FOCUS: Issue resolution
+   - Requirements: Problem diagnosis, root cause analysis, solution verification
+   - Process: Plan mode (🎯) → Chain of thought analysis → Agent mode (⚡)
 
-## Act Mode (Requires Manual Activation)
-- Can only be activated when user explicitly types "Act" in the composer
-- Enables code modifications and action execution
-- Requirements for activation:
-  - Plan mode must be completed
-  - User must approve the plan
-  - Confidence score must be ≥ 95%
-- Maintains traceability to original plan
+Cross-reference with @memories.md and @lessons-learned.md for context and best practices.`
 
---------------------SCRATCHPAD WORKSPACE (Current Task & Progress)--------------------
+# Mode: PLAN 🎯
 
-## Current Task: Implement Modern Contact Form Component
-Status: ACT MODE 🛠️ (Implementation Type)
-Confidence Score: 95% (Implementation Ready) 📊
+## Phase 2: Data Management Implementation 🚀
 
-## Feature Requirements (In Progress)
-[-] Create a responsive contact form component
-[ ] Implement form validation with Zod
-[ ] Add loading states and success/error feedback
-[ ] Ensure accessibility compliance
-[ ] Implement email sending with Resend
-[ ] Add basic rate limiting (5 submissions per IP per hour)
+### Current Task
+Planning and implementing the Data Management phase with three main components:
+1. Authentication System
+2. Cloud Data Migration
+3. Advanced CSV Handling
 
-## Implementation Progress
-🔄 Current Step: Setup & Configuration
-[X] Plan approved and Act Mode activated
-[-] Starting implementation of contact form component
+### Implementation Timeline
+Total Duration: 1-2 weeks
 
-## Next Actions (Immediate)
-1. Create necessary directories and files
-2. Install required dependencies
-3. Set up form component structure
-4. Implement form UI with Tailwind
-5. Add form validation with Zod
+### Technical Requirements
+1. Authentication System (3 days)
+   - [ ] Supabase auth setup
+     - User authentication flow
+     - Social login integration (if required)
+     - Session management
+     - Security measures
+   - [ ] User profile management
+     - Profile data structure
+     - CRUD operations
+     - Data validation
+   - [ ] Session management
+     - Token handling
+     - Refresh mechanisms
+     - Secure storage
+   - [ ] Basic RBAC roles
+     - Role definitions
+     - Permission system
+     - Access control
 
-## Technical Stack (Being Implemented)
-- Next.js App Router
-- TypeScript
-- Tailwind CSS
-- React Hook Form + Zod
-- Resend for emails
-- Upstash Redis for rate limiting
+2. Cloud Data Migration (4 days)
+   - [ ] Supabase database schema
+     - Table structures
+     - Relationships
+     - Indexes
+     - Constraints
+   - [ ] Local → Cloud migration tool
+     - Data mapping
+     - Migration scripts
+     - Progress tracking
+     - Error handling
+   - [ ] Data encryption at rest
+     - Encryption methods
+     - Key management
+     - Security protocols
+   - [ ] Conflict resolution
+     - Merge strategies
+     - Version control
+     - Data integrity
 
-## Progress Tracking
-[X] Initial requirements gathering
-[X] Technical stack selection
-[X] Architecture planning
-[X] Implementation plan approval
-[-] Development
-[ ] Testing
-[ ] Documentation
+3. Advanced CSV Handling (3 days)
+   - [ ] Bulk import/export
+     - File parsing
+     - Data validation
+     - Progress tracking
+     - Error handling
+   - [ ] Data validation rules
+     - Rule engine
+     - Custom validations
+     - Error reporting
+   - [ ] Template system
+     - Template creation
+     - Mapping rules
+     - Default values
+   - [ ] Error reporting
+     - Detailed messages
+     - Recovery options
+     - Logging system
 
-## Implementation Notes
-- Following mobile-first approach
-- Implementing with TypeScript for type safety
-- Adding comprehensive error handling
-- Ensuring accessibility compliance
-- Using React Hook Form + Zod for validation
-- Implementing rate limiting with Upstash Redis
+### Progress Tracking
+- Current Phase: 2 - Data Management
+- Status: Planning Stage
+- Confidence: 85% (Need clarification on some points)
 
-Let's begin the implementation! 🚀
+### Questions for Implementation
+1. Authentication System:
+   - Which social login providers should we integrate? (e.g., Google, GitHub)
+   - What are the specific password requirements for local auth?
+   - Should we implement 2FA?
+   - What user profile fields are needed beyond basics?
 
-## Technical Decisions (Confirmed)
-1. Email Service: Resend ✉️
-   - Modern API with good TypeScript support
-   - Easy integration with Next.js
-   - Reliable delivery rates
+2. Cloud Migration:
+   - What's the estimated data volume for initial migration?
+   - Do we need a staging environment for testing?
+   - What's the acceptable downtime window for migration?
+   - How should we handle existing data conflicts?
 
-2. Spam Protection: Basic Rate Limiting 🛡️
-   - 5 submissions per IP per hour
-   - No need for reCAPTCHA
-   - IP-based tracking
+3. CSV Handling:
+   - What are the required CSV column mappings?
+   - Should we support multiple CSV formats?
+   - What validation rules are needed?
+   - How should we handle partial import failures?
 
-3. Data Storage: No Database Required 📋
-   - Emails will be sent directly
-   - No persistent storage needed
+### Next Steps
+1. **Authentication System**
+   ```
+   - Set up Supabase project
+   - Configure authentication providers
+   - Implement user profile management
+   - Set up RBAC system
+   ```
 
-4. Form Validation: Zod ✅
-   - Type-safe validation
-   - Easy integration with React Hook Form
-   - Built-in error messages
+2. **Cloud Migration**
+   ```
+   - Design database schema
+   - Create migration scripts
+   - Implement encryption
+   - Add conflict resolution
+   ```
 
-5. Rate Limiting Implementation: 🔒
-   - Using upstash/ratelimit
-   - Redis-based rate limiting
-   - IP-based tracking (5/hour)
+3. **CSV Handling**
+   ```
+   - Build import/export system
+   - Create validation engine
+   - Implement template system
+   - Add error handling
+   ```
 
-## Detailed Implementation Plan
-1. Setup & Configuration
-   - Install dependencies
-   - Configure Resend API
-   - Set up Redis for rate limiting
+### Dependencies
+- Supabase SDK
+- CSV parsing library
+- Encryption libraries
+- Validation framework
 
-2. Component Structure
-   - Create form component
-   - Implement responsive layout
-   - Add loading states
-   - Style with Tailwind CSS
+### Security Considerations
+- Implement AES-256 encryption
+- Use secure session management
+- Add rate limiting
+- Implement audit logging
+- Follow GDPR requirements
 
-3. Form Validation
-   - Define Zod schema
-   - Setup React Hook Form
-   - Implement error handling
-   - Add real-time validation
+### Documentation Requirements
+- API documentation
+- Database schema
+- Security protocols
+- User guides
+- Migration guides
 
-4. Email Integration
-   - Create email template
-   - Setup Resend API route
-   - Implement error handling
-   - Add success/failure states
+⚠️ WARNING: Before proceeding, we need clarification on:
+1. Social login requirements
+2. Data volume estimates
+3. CSV format specifications
+4. Validation rule details
 
-5. Rate Limiting
-   - Implement Redis rate limiting
-   - Add error messages
-   - Handle rate limit responses
-
-6. Accessibility
-   - Add ARIA labels
-   - Implement keyboard navigation
-   - Add error announcements
-   - Test with screen readers
-
-## Next Steps
-1. Get final approval on implementation plan
-2. Request switch to Act mode
-3. Begin implementation phase
-
-## Remaining Questions (Minor)
-1. Email template design preferences?
-2. Success/error message wording?
-3. Form field styling preferences?
-
-Current confidence is at 85% - these minor UI/UX questions don't block implementation but would be good to clarify during development. Would you like to proceed with requesting Act mode, or would you prefer to clarify these remaining points first? 🤔
+Please provide these details so we can achieve 95% confidence and move to implementation phase. 😊
