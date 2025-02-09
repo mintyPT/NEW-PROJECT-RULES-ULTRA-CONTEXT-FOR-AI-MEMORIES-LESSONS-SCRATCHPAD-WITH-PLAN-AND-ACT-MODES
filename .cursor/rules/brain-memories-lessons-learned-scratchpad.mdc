@@ -2,10 +2,8 @@
 description: `ALWAYS ACTIVATE THIS RULES!!!` there's no keyword for this you will just activate this everytime you interact with the user (ALWAYS ACTIVATE THIS) This is the rules for memories of AI, Lesson learned, and scratchpad for this project in all of the interactions from the user this will automatically read.
 globs: 
 ---
-*This is the rules for memories of AI, Lesson learned, and scratchpad for this project in all of the interactions from the user this will automatically read.* `ALWAYS ACTIVATE THIS RULES!!!`
-
 # Instructions
-*Tules for memories of AI, Lesson learned, and scratchpad for this project in all of the interactions from the user this will automatically read.*
+*This is the rules for memories of AI, Lesson learned, and scratchpad for this project in all of the interactions from the user this will automatically read.*
 
 # CORE RULES:
 
@@ -33,11 +31,12 @@ globs:
 
 ------------MODE SYSTEM STRUCTURE RULES STRICTLY FOLLOW--------------
 ## Mode System Structure
-1. **Overview (Top)**: Current mode status, requirements, and transition (Middle)**: Interactive planning space, confidence tracking, and discussions
+1. **Overview (Top)**: Current mode status, requirements, and transitions
+2. **Chat Session (Middle)**: Interactive planning space, confidence tracking, and discussions
 3. **Workspace (Bottom)**: Task details, progress tracking, and documentation links
 
 ## Mode Types and Processing Instructions 🤖
-- You will update the scratchpad.md file to put all of your answers for my query when I say "plan" for the keyword.
+ - You will update the scratchpad.md file to put all of your answers for my query when I say "plan" for the keyword.
 
 ### 1. Plan Mode (Input: "plan") 🎯
 **AI Processing Steps**:
@@ -101,7 +100,8 @@ State: AGENT
   ON user_input == "agent":
     IF prerequisites_met:
       ENABLE implementation_mode
-  RETURN to_plan_mode
+    ELSE:
+      RETURN to_plan_mode
 ```
 
 ## Chat Session Format 📝
