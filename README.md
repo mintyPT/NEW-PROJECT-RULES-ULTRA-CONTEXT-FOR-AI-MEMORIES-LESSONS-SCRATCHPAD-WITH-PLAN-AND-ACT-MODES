@@ -76,132 +76,120 @@ Activation Requirements:
    - Updates documentation
    ```
 
-## 🎮 Workflow Example
+## 🎮 Workflow Examples
 
-### Example 1: Creating a New Feature 🛠️
+### Example 1: Creating a New Feature
+```markdown
+USER: "plan implement a new button component"
 
-1. **User Request**:
-   ```markdown
-   User: "Let's create a new Button component with variants"
-   ```
+AI: 🎯 PLAN MODE ACTIVATED
+Current Task: Implement new button component
+Questions:
+1. What variants are needed? (primary/secondary/outline)
+2. Should it support icons?
+3. What sizes are required?
+Confidence: 65%
 
-2. **Plan Mode Activation** 🎯
-   ```markdown
-   AI: "Entering Plan Mode..."
+USER: "primary and secondary variants, with icons, three sizes"
 
-   # Mode: PLAN 🎯
-   Current Task: Create Button component with variants
+AI: Updated Understanding:
+- Primary/Secondary variants
+- Icon support
+- Small/Medium/Large sizes
+Confidence: 95%
 
-   Understanding:
-   - Need to implement Button component
-   - Requires variant support
-   - Must follow accessibility standards
+USER: "agent"
 
-   Questions:
-   1. Which variants are needed? (primary/secondary/outline?)
-   2. What sizes should be supported?
-   3. Should we include icon support?
+AI: ⚡ AGENT MODE ACTIVATED
+- Creating Button component
+- Implementing variants
+- Adding icon support
+- Testing accessibility
+```
 
-   Confidence: 65% (Need variant specifications)
-   ```
+### Example 2: Fixing a Bug
+```markdown
+USER: "plan fix the form submission error"
 
-3. **User Clarification**:
-   ```markdown
-   User: "We need primary, secondary, outline variants, and sm/md/lg sizes"
+AI: 🎯 PLAN MODE ACTIVATED
+Current Task: Debug form submission error
+Questions:
+1. When does the error occur?
+2. Any error messages in console?
+3. Which form component is affected?
+Confidence: 50%
 
-   AI: "Updating understanding..."
-   - Variants: primary, secondary, outline
-   - Sizes: sm, md, lg
-   - Adding to requirements
+USER: "happens on login form, console shows validation error"
 
-   Confidence: 95% (Requirements clear)
-   ```
+AI: Chain of Thought Analysis:
+1. Login form validation
+2. Console error check
+3. Input validation rules
+Confidence: 95%
 
-4. **Agent Mode Transition** ⚡
-   ```markdown
-   AI: "Requirements met, entering Agent Mode..."
+USER: "agent"
 
-   Implementation:
-   1. Creating Button component
-   2. Adding variants and sizes
-   3. Implementing accessibility
-   4. Updating documentation
-   ```
+AI: ⚡ AGENT MODE ACTIVATED
+- Debugging validation
+- Fixing error handling
+- Testing submission
+```
 
-5. **Real-time Updates**:
-   ```markdown
-   @memories.md:
-   [2024-03-21 15:00] Development: Implemented Button component with primary/secondary/outline variants, size options (sm/md/lg), and full accessibility support. #feature
+### Example 3: Project Setup
+```markdown
+USER: "plan setup new Next.js project"
 
-   @lessons-learned.md:
-   [2024-03-21 15:00] Component Development:
-   Issue: Button variants need consistent styling
-   Solution: Implemented CSS variable system
-   Why: Ensures theme consistency
-   ```
+AI: 🎯 PLAN MODE ACTIVATED
+Current Task: Initialize Next.js project
+Questions:
+1. Which version of Next.js?
+2. TypeScript or JavaScript?
+3. Which UI components needed?
+Confidence: 70%
 
-### Example 2: Bug Fix Workflow 🐛
+USER: "Next.js 14, TypeScript, Shadcn UI"
 
-1. **User Report**:
-   ```markdown
-   User: "The DatePicker isn't working with form validation"
-   ```
+AI: Project Structure:
+- Next.js 14 setup
+- TypeScript configuration
+- Shadcn UI integration
+Confidence: 95%
 
-2. **Plan Mode Analysis** 🎯
-   ```markdown
-   # Mode: PLAN 🎯
-   Current Task: Fix DatePicker form validation
+USER: "agent"
 
-   Understanding:
-   - DatePicker has validation issues
-   - Need to investigate form integration
+AI: ⚡ AGENT MODE ACTIVATED
+- Creating project
+- Setting up TypeScript
+- Installing dependencies
+```
 
-   Questions:
-   1. What validation library is being used?
-   2. Are there console errors?
-   3. Which form scenarios fail?
+### Example 4: Documentation Update
+```markdown
+USER: "plan update API documentation"
 
-   Confidence: 45% (Need more details)
-   ```
+AI: 🎯 PLAN MODE ACTIVATED
+Current Task: Update API docs
+Questions:
+1. Which endpoints need updates?
+2. Any new parameters added?
+3. Response format changes?
+Confidence: 60%
 
-3. **Investigation Process**:
-   ```markdown
-   AI: "Investigating..."
-   - Checking component code
-   - Reviewing form integration
-   - Testing validation scenarios
+USER: "new authentication endpoints"
 
-   Found Issue: Type mismatch between DatePicker output and form expectations
-   Confidence: 95% (Root cause identified)
-   ```
+AI: Documentation Plan:
+- Auth endpoints
+- Request/Response formats
+- Example usage
+Confidence: 95%
 
-4. **Solution Implementation** ⚡
-   ```markdown
-   AI: "Implementing fix..."
-   1. Updating type definitions
-   2. Adding value transformation
-   3. Testing form scenarios
-   4. Updating documentation
-   ```
+USER: "agent"
 
-5. **Documentation Updates**:
-   ```markdown
-   @memories.md:
-   [2024-03-21 15:30] Bug Fix: Resolved DatePicker form validation issue by implementing proper type transformation and updating integration docs. #bug
-
-   @lessons-learned.md:
-   [2024-03-21 15:30] Form Integration:
-   Issue: DatePicker value format inconsistency
-   Solution: Added value transformer
-   Why: Ensures consistent form data handling
-   ```
-
-These examples demonstrate:
-- Mode transitions (Plan 🎯 → Agent ⚡)
-- Confidence building process
-- Documentation updates
-- Memory and lesson tracking
-- Real-time progress monitoring
+AI: ⚡ AGENT MODE ACTIVATED
+- Updating docs
+- Adding examples
+- Verifying formats
+```
 
 ## 📝 Documentation Standards
 
