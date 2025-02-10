@@ -1,4 +1,4 @@
-# 🧠 AI Context Rules System
+# 🎯 AI Context Rules System
 
 ## 🌟 Quick Overview
 A comprehensive system for managing AI interactions through memory management, lessons learned tracking, and dual-mode operation (Plan/Agent). This system ensures consistent, high-quality development while maintaining detailed project documentation and knowledge retention.
@@ -75,6 +75,121 @@ Activation Requirements:
    - System implements solution
    - Updates documentation
    ```
+
+## 🎮 Workflow Examples
+
+### Example 1: Creating a New Feature
+```markdown
+USER: "plan implement a new button component"
+
+AI: 🎯 PLAN MODE ACTIVATED
+Current Task: Implement new button component
+Questions:
+1. What variants are needed? (primary/secondary/outline)
+2. Should it support icons?
+3. What sizes are required?
+Confidence: 65%
+
+USER: "primary and secondary variants, with icons, three sizes"
+
+AI: Updated Understanding:
+- Primary/Secondary variants
+- Icon support
+- Small/Medium/Large sizes
+Confidence: 95%
+
+USER: "agent"
+
+AI: ⚡ AGENT MODE ACTIVATED
+- Creating Button component
+- Implementing variants
+- Adding icon support
+- Testing accessibility
+```
+
+### Example 2: Fixing a Bug
+```markdown
+USER: "plan fix the form submission error"
+
+AI: 🎯 PLAN MODE ACTIVATED
+Current Task: Debug form submission error
+Questions:
+1. When does the error occur?
+2. Any error messages in console?
+3. Which form component is affected?
+Confidence: 50%
+
+USER: "happens on login form, console shows validation error"
+
+AI: Chain of Thought Analysis:
+1. Login form validation
+2. Console error check
+3. Input validation rules
+Confidence: 95%
+
+USER: "agent"
+
+AI: ⚡ AGENT MODE ACTIVATED
+- Debugging validation
+- Fixing error handling
+- Testing submission
+```
+
+### Example 3: Project Setup
+```markdown
+USER: "plan setup new Next.js project"
+
+AI: 🎯 PLAN MODE ACTIVATED
+Current Task: Initialize Next.js project
+Questions:
+1. Which version of Next.js?
+2. TypeScript or JavaScript?
+3. Which UI components needed?
+Confidence: 70%
+
+USER: "Next.js 14, TypeScript, Shadcn UI"
+
+AI: Project Structure:
+- Next.js 14 setup
+- TypeScript configuration
+- Shadcn UI integration
+Confidence: 95%
+
+USER: "agent"
+
+AI: ⚡ AGENT MODE ACTIVATED
+- Creating project
+- Setting up TypeScript
+- Installing dependencies
+```
+
+### Example 4: Documentation Update
+```markdown
+USER: "plan update API documentation"
+
+AI: 🎯 PLAN MODE ACTIVATED
+Current Task: Update API docs
+Questions:
+1. Which endpoints need updates?
+2. Any new parameters added?
+3. Response format changes?
+Confidence: 60%
+
+USER: "new authentication endpoints"
+
+AI: Documentation Plan:
+- Auth endpoints
+- Request/Response formats
+- Example usage
+Confidence: 95%
+
+USER: "agent"
+
+AI: ⚡ AGENT MODE ACTIVATED
+- Updating docs
+- Adding examples
+- Verifying formats
+```
 
 ## 📝 Documentation Standards
 
@@ -175,17 +290,6 @@ If this system helps you, consider supporting:
 For full context and discussions:
 https://forum.cursor.com/t/rules-for-ultra-context-memories-lessons-scratchpad-with-plan-and-act-modes/48792/22?u=t1nker-1220
 
-## Contacts:
-https://www.instagram.com/clover_nat/
-https://www.facebook.com/nathanielmarquez.20
-https://x.com/T1nker1220
-
-## DONATE IF THIS HELP YOU, THANK YOU!
-Paypal: https://www.paypal.me/JohnNathanielMarquez
-Gcash: 09605088715
-
-## For full context here's the link of the forum:
-https://forum.cursor.com/t/rules-for-ultra-context-memories-lessons-scratchpad-with-plan-and-act-modes/48792/22?u=t1nker-1220
 ---
 
 *Note: This system is designed for seamless AI interaction management. For detailed implementation guidelines, refer to the individual rule files.* 🚀
