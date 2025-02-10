@@ -1,3 +1,4 @@
+FEEL FREE TO DONATE IF THIS HELP YOU! 
 # 🧠 AI Context Rules System
 
 ## 🌟 Quick Overview
@@ -126,6 +127,8 @@ Feel free to enhance this system by:
 
 MIT License - Free to use and modify!
 
+## DONATE IF THIS HELP YOU, THANK YOU!
+Paypal: https://www.paypal.me/JohnNathanielMarquez
 ---
 
 *Note: This system is designed for seamless AI interaction management. For detailed implementation guidelines, refer to the individual rule files.* 🚀
