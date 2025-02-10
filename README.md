@@ -1,4 +1,4 @@
-# 🎯 AI Context Rules System
+# 🧠 AI Context Rules System
 
 ## 🌟 Quick Overview
 A comprehensive system for managing AI interactions through memory management, lessons learned tracking, and dual-mode operation (Plan/Agent). This system ensures consistent, high-quality development while maintaining detailed project documentation and knowledge retention.
@@ -175,6 +175,17 @@ If this system helps you, consider supporting:
 For full context and discussions:
 https://forum.cursor.com/t/rules-for-ultra-context-memories-lessons-scratchpad-with-plan-and-act-modes/48792/22?u=t1nker-1220
 
+## Contacts:
+https://www.instagram.com/clover_nat/
+https://www.facebook.com/nathanielmarquez.20
+https://x.com/T1nker1220
+
+## DONATE IF THIS HELP YOU, THANK YOU!
+Paypal: https://www.paypal.me/JohnNathanielMarquez
+Gcash: 09605088715
+
+## For full context here's the link of the forum:
+https://forum.cursor.com/t/rules-for-ultra-context-memories-lessons-scratchpad-with-plan-and-act-modes/48792/22?u=t1nker-1220
 ---
 
 *Note: This system is designed for seamless AI interaction management. For detailed implementation guidelines, refer to the individual rule files.* 🚀
