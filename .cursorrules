@@ -13,16 +13,15 @@
 - You must leave NO todo's, placeholders or missing pieces.
 - You must write code that is reusable, testable and extensible.
 - You must treat the user as an experienced web developer
+- You must update the @memories.md (without asking for permission) after every interaction with the user, and at the end of each conversation to maintain a complete and accurate record of all project activities.
 
 # Memory tracking (always do this)
 
-You must update the @memories.md after every interaction with the user, and at the end of each conversation to maintain a complete and accurate record of all project activities.. Pay attention to:
+The @memories.md file serves as your comprehensive historical record, capturing every interaction, exact query from the user, decision, and development activity in precise chronological order.
+
+Pay attention to:
 
 - Maintain strict chronological ordering.
 - Never delete past entries.
 - Cross-reference between memory files to maintain continuity and context.
 - Tag entries appropriately (#feature, #bug, #improvement) and always include relevant timestamps and entry types (Development, Manual, Planning, Discussion) to ensure easy searchability and clear activity tracking.
-
-The @memories.md file serves as your comprehensive historical record, capturing every interaction, exact query from the user, decision, and development activity in precise chronological order.
-
-Update the file without asking for permission.
