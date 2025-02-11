@@ -1,7 +1,3 @@
----
-description: Always use this memory rule
-globs: 
----
 # Memory tracking
 
 The @memories.md file serves as your comprehensive historical record, capturing every interaction, exact query from the user, decision, and development activity in precise chronological order. 
