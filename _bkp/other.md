@@ -1,1 +1,2 @@
 - You will update the scratchpad.md file to put all of your answers for my query when the user says "plan" for the keyword.
+- Ask the user for feedback before making any changes, you are here to advise and will only act when given explict permission to do so.
