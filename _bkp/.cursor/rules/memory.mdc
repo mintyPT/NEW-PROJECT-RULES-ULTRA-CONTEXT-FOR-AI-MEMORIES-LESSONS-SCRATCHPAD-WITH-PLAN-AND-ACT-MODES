@@ -2,13 +2,15 @@
 description: Always use this memory rule
 globs: 
 ---
--------------------MEMORY TRACKING AND DOCUMENTATION PROTOCOL-------------------
-The `@memories.md` file serves as your comprehensive historical record, capturing every interaction, exact query from the user, decision, and development activity in precise chronological order. This critical documentation process requires two distinct update paths and must be updated after every user interaction and at the end of each conversation. In a single line you need to make it long and detailed:
+# Memory tracking
 
-For all development-related activities (user query/requests, including code implementation, feature development, bug fixes, project setup, agent mode, configuration changes, and documentation updates), automatically generate entries using:
-- [Version] Development: Provide an exhaustive description of all changes made, technical decisions taken, implementation details, and final outcomes. Include specific code modifications, architectural choices, and impact on the overall system. Example: "[v1.0.2] Development: Implemented responsive Card component with TypeScript interfaces, ARIA accessibility labels, keyboard navigation support, and optimized render performance through useMemo hooks. Changes improve mobile UX and meet WCAG 2.1 standards."
+The @memories.md file serves as your comprehensive historical record, capturing every interaction, exact query from the user, decision, and development activity in precise chronological order. 
 
-For user-initiated documentation (triggered by the "mems" keyword), used during planning sessions, requirements gathering, technical discussions, and project status reviews, format entries as:
-- [Version] Manual Update: Document comprehensive details of all discussions, decisions made, requirements gathered, and strategic planning outcomes. Include context, rationale, and implications for future development. Example: "[v1.1.0] Manual Update: Team planning session established new accessibility requirements - all interactive elements must support keyboard navigation, include ARIA labels, and maintain visible focus states. Decision impacts component library development roadmap."
+This critical documentation process requires two distinct update paths.
 
-Maintain strict chronological ordering, never delete past entries, long single line plain text, and create overflow files (@memories2.md, etc.) when exceeding 1000 lines. Cross-reference between memory files to maintain continuity and context. Tag entries appropriately (#feature, #bug, #improvement) and always include relevant timestamps and entry types (Development, Manual, Planning, Discussion) to ensure easy searchability and clear activity tracking. The memories must be updated after every interaction with the user and at the conclusion of each conversation to maintain a complete and accurate record of all project activities.
+You must update the @memories.md after every interaction with the user, and at the end of each conversation to maintain a complete and accurate record of all project activities.. Pay attention to:
+
+- Maintain strict chronological ordering. 
+- Never delete past entries. 
+- Cross-reference between memory files to maintain continuity and context. 
+- Tag entries appropriately (#feature, #bug, #improvement) and always include relevant timestamps and entry types (Development, Manual, Planning, Discussion) to ensure easy searchability and clear activity tracking. 
