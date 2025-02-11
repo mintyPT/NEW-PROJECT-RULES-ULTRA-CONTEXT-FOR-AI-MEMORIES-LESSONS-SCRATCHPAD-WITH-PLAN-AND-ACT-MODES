@@ -1,0 +1,1 @@
+- You will update the scratchpad.md file to put all of your answers for my query when the user says "plan" for the keyword.
