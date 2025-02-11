@@ -1,4 +1,5 @@
 STRICT RULES:
+
 - ALWAYS FETCH ALL OF THE RULES
 - Follow the .cursorrules instructions every interaction
 - DON'T BE LAZY AND BE ATTENTIVE! AND DON'T GET HALLUCINATIONS, BE CONSISTENT!
